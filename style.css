@@ -2,20 +2,47 @@
 
 
 
+/*---Sass Settings --*/
+
+
 
 /* GLOBAL STYLES
 -------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-
 body {
+  font-family: 'Poppins', sans-serif;
+  color: #222;
   padding-bottom: 3rem;
   color: #5a5a5a;
 }
 
+.padding  {
+  padding-bottom: 2rem;
+}
 
-/*---Sass Settings --*/
+.btn-primary {
+  background-color: #6648b1;
+  border: 1px solid #6648b1;
+}
+.btn-primary {
+  background-color: #563d7c;
+  border: 1px solid #563d7c;
+}
+/* Navigation Bar
+-------------------------------------------------- */
+navbar {
+  padding: .8rem;
+}
 
+.logo img {
+  max-height: 30px !important;
+}
+.navbar-nav {
+  padding-right: 20px;
+}
 
+.nav-link {
+  font-size: 1.1em !important;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -28,6 +55,21 @@ body {
 .carousel-caption {
   bottom: 3rem;
   z-index: 10;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carousel-caption h1 {
+  font-size: 500%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 15px #000;
+}
+
+.carousel-caption h3 {
+  font-size: 200%;
+  font-weight: 500;
+  text-shadow: 1px 1px 10px #000;
+  padding-bottom: 1rem;
 }
 
 /* Declare heights because of positioning of img element */
@@ -43,6 +85,24 @@ body {
   height: 40rem;
 }
 
+.welcome {
+  width: 75%;
+  margin: 0 auto;
+}
+
+/* Footer
+-------------------------------------------------- */
+footer {
+  background-color: #3f3f3f;
+  color: d5d5d5;
+  padding-top: 2rem;
+}
+
+
+hr.light {
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+}
 
 
 /*---Media Queries --*/
@@ -50,7 +110,19 @@ body {
 
   }
 @media (max-width: 768px) {
-  
+  .carousel-caption { 
+    top: 45%;}
+  .carousel-caption h1 {
+    font-size: 350%;
+  }
+   .carousel-caption h3{
+     font-size: 140%;
+     font-weight: 400;
+     padding-bottom: .2rem;
+   }
+   .carousel-caption btn {
+     font-size: 95%;
+   }
 }
 @media (max-width: 576px) {
   
