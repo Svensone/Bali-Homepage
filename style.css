@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
-
-
 /*---Sass Settings --*/
-
-
 
 /* GLOBAL STYLES
 -------------------------------------------------- */
@@ -27,6 +23,7 @@ body {
   background-color: #563d7c;
   border: 1px solid #563d7c;
 }
+
 /* Navigation Bar
 -------------------------------------------------- */
 navbar {
@@ -43,6 +40,22 @@ navbar {
 .nav-link {
   font-size: 1.1em !important;
 }
+
+
+/* ----------- Animation Section 
+-------------------------------------------------- */ 
+
+#animations {
+  margin-top: 2rem;
+}
+
+/* ----------- Project Section 
+-------------------------------------------------- */
+
+#project1 {
+  margin-top: 5rem;
+}
+
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -90,20 +103,112 @@ navbar {
   margin: 0 auto;
 }
 
+/* Two Column Intro
+-------------------------------------------------- */
+#showcase img{
+  width:95%;
+  margin-left:30px;
+}
+
+#showcase .showcase-right{
+  margin-top:90px;
+}
+.container-showcase{
+  min-height: 50vh;
+}
+
+
+ /* Jumbotron in surf.html
+-------------------------------------------------- */
+.jumbotron {
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
+  background-color: #fff;
+}
+:root {
+  --jumbotron-padding-y: 3rem;
+}
+
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+  }
+}
+@keyframes moveLeft {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+
+#btn-left {
+  position: relative;
+  animation-name: moveLeft;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+/* Sign In Form 
+-------------------------------------------------- */
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
 /* Footer
 -------------------------------------------------- */
 footer {
-  background-color: #3f3f3f;
   color: d5d5d5;
   padding-top: 2rem;
 }
-
 
 hr.light {
   border-top: 1px solid #d5d5d5;
   width: 75%;
 }
-
 
 /*---Media Queries --*/
 @media (max-width: 992px) {

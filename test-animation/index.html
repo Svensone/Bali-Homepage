@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div>
+      <h1 class="ml8">
+        <span class="letters-container">
+          <span class="letters letters-left">Hi</span>
+          <span class="letters bang">!</span>
+        </span>
+        <span class="circle circle-white"></span>
+        <span class="circle circle-dark"></span>
+        <span class="circle circle-container"
+          ><span class="circle circle-dark-dashed"></span
+        ></span>
+      </h1>
+    </div>
+
+    /* example from http://tobiasahlin.com/moving-letters/#1 */
+    <div>
+      <h1 class="ml1">
+        <span class="text-wrapper">
+          <span class="line line1"></span>
+          <span class="letterss">THURSDAY</span>
+          <span class="line line2"></span>
+        </span>
+      </h1>
+    </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script>
+
+      // ---------- Animation Thursday ------------------ //
+
+      // Wrap every letter in a span
+      $(".ml11 .letterss").each(function() {
+        $(this).html(
+          $(this)
+            .text()
+            .replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>")
+        );
+      });
+
+      anime
+        .timeline({ loop: true })
+        .add({
+          targets: ".ml11 .letter1",
+          scale: [0.3, 1],
+          opacity: [0, 1],
+          translateZ: 0,
+          easing: "easeOutExpo",
+          duration: 600,
+          delay: function(el, i) {
+            return 70 * (i + 1);
+          }
+        })
+        .add({
+          targets: ".ml11 .line1",
+          scaleX: [0, 1],
+          opacity: [0.5, 1],
+          easing: "easeOutExpo",
+          duration: 700,
+          offset: "-=875",
+          delay: function(el, i, l) {
+            return 80 * (l - i);
+          }
+        })
+        .add({
+          targets: ".ml11",
+          opacity: 0,
+          duration: 1000,
+          easing: "easeOutExpo",
+          delay: 1000
+        });
+  </script>
+
+    <!--  ------ Animation Circle "Hi!" ----------- -->
+
+  <script>
+      anime
+        .timeline({ loop: true })
+        .add({
+          targets: ".ml8 .circle-white",
+          scale: [0, 3],
+          opacity: [1, 0],
+          easing: "easeInOutExpo",
+          rotateZ: 360,
+          duration: 1100
+        })
+        .add({
+          targets: ".ml8 .circle-container",
+          scale: [0, 1],
+          duration: 1100,
+          easing: "easeInOutExpo",
+          offset: "-=1000"
+        })
+        .add({
+          targets: ".ml8 .circle-dark",
+          scale: [0, 1],
+          duration: 1100,
+          easing: "easeOutExpo",
+          offset: "-=600"
+        })
+        .add({
+          targets: ".ml8 .letters-left",
+          scale: [0, 1],
+          duration: 1200,
+          offset: "-=550"
+        })
+        .add({
+          targets: ".ml8 .bang",
+          scale: [0, 1],
+          rotateZ: [45, 15],
+          duration: 1200,
+          offset: "-=1000"
+        })
+        .add({
+          targets: ".ml8",
+          opacity: 0,
+          duration: 1000,
+          easing: "easeOutExpo",
+          delay: 1400
+        });
+
+      anime({
+        targets: ".ml8 .circle-dark-dashed",
+        rotateZ: 360,
+        duration: 8000,
+        easing: "linear",
+        loop: true
+      });
+  </script>
+  </body>
+</html>

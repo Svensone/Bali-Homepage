@@ -4,28 +4,28 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>My first Webpage for CS50</title>
+    <title>Bali Website</title>
 
-    <!-- links for libaries etc. -->
-
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    />
+    <!-- Bootstrap -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+
+    <!-- Fonts -->
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    
+    <!-- Stylesheet -->
     <link href="style.css" rel="stylesheet" />
   </head>
 
   <body>
+      
     <!-- Navigation -->
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
       <div class="container-fluid">
         <a href="#" class="navbar-brand">
           <img src="img/019-van.png" alt="" height="50px" /> </a>
-
           <button
             class="navbar-toggler"
             type="button"
@@ -33,29 +33,31 @@
             data-target="#navbarResponsive">
             <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a href="#" class="nav-link">me, myself & I</a>
+                    <a href="./index.html" class="nav-link">home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
+                    <a href="./animations.html" class="nav-link">animations</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">activites</a>
+                    <a href="./living.html" class="nav-link">living</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="./surf.html" class="nav-link">surf</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Sign In</a>
+                    <a href="./SignIn.html" class="nav-link">Sign In</a>
                 </li>
-             
             </ul>
         </div>
         </a>
       </div>
     </nav>
 
-    <!-- - Image Slider -->
+    <!-- - Carousel - Image Slider -->
     <div id="slides" class="carousel slide" data-ride="carousel">
         <ul class="carousel-indicators">
             <li data-target="#slides" data-slide-to="0" class="active"></li>
@@ -64,93 +66,69 @@
         </ul>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="first-slide" src="img/beach ocean.jpg" alt="">
+                <img class="first-slide" src="img/formatted/caro-1.jpg" alt="">
                 <div class="carousel-caption">
-                    <h1 class="display-1"> Coding in Paradise </h1>
-                    <h3> getting into computer science </h3>
-                    <button type="button" class="btn btn-outline-light btn-lg">
-                        Study
-                    </button>
-                    <button type="button" class="btn btn-primary btn-lg">private</button>
+                    <h1 class="display-1"> Bali 🌴 </h1>
+                    <h3> surf  & code  </h3>
+                   
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img/ocean dive.jpg" alt="">
+                <img src="img/formatted/caro-2.jpg" alt="">
             </div>
             <div class="carousel-item">
-                <img src="img/Bali1.jpeg" alt="">
+                <img src="img/formatted/caro-3.jpg" alt="">
             </div>
         </div>
     </div>
 
 
-    <!-- - Jumbotron -->
-    <div class="container-fluid">
-        <div class="row jumbotron">
-            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
-                <p class="lead"> some random text Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, aliquam.</p>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
-                <a href="#"><button type="button" class="btn btn-outline-secondary btn-lg">
-                    Web Hosting
-                </button> </a>
-                </div>
-        </div>
-    </div>
 
-    <!-- - Welcome Section -->
-    <div class="container-fluid padding">
+    <!-- - Animations Section -->
+    <div id="animations" class="container-fluid padding">
         <div class="row welcome text-center">
             <div class="col-12">
-                <h1 class="display-4"> Built with ease</h1>
+                <h1 class="display-4"> some fooling around with animations </h1>
             </div>
             <hr>
             <div class="col-12">
-                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium officiis ducimus doloremque sed numquam quibusdam!</p>
+                <p class="lead"><button type="button" class="btn btn-primary btn-lg"> more animations</button>
+                </p>
             </div>
-
         </div>
     </div>
-
-    <!-- - Three Column Section -->
-    <div class="container-fluid padding">
+    <div  class="container-fluid padding">
         <div class="row text-center padding">
             <div class="col-xs12 col-sm-6 col-md-4">
                 <i class="fas fa-code"></i>
-                <h3>HTML5</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, magnam?</p>
-
+                <h3>pop.js</h3>
+                <p>Lorem ipsum dolor sit</p>
             </div>
             <div class="col-xs12 col-sm-6 col-md-4">
                     <i class="fas fa-bold"></i>
-                    <h3>Bootstrap</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, magnam?</p>
-    
+                    <h3>mo.js</h3>
+                    <p>sdfasd</p>
                 </div>
                 <div class="col-sm-12 col-md-4">
                         <i class="fab fa-css3"></i>
-                        <h3>CSS3</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, magnam?</p>
-        
+                        <h3>d3.js</h3>
+                        <p>adsfadm?</p>
                     </div>
             <hr class="my-4">
-
         </div>
     </div>
+
  
-    <!-- - Two Column Section -->
+    <!-- - Projects Section -->
     <div class="container-fluid padding">
         <div class="row padding">
-            <div class="col-lg-6">
-                <h2> If you build it ...</h2>
+            <div class="col-lg-6" id="project1">
+                <h2> Gatsby App ...</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, cum?
+                    Portfolio Page built with latest Gatsby.js version
                 </p>
-                <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, officiis?</p>
                 <br>
-                <button class="btn btn-primary"> Learn more
-
-                </button>
+                <link href="https://portfolio-gatsby-bali.netlify.com"><button class="btn btn-primary">check it out  </button> </link>
             </div>
             <div class="col-lg-6">
                 <img src="img/jade-rousseau-486263-unsplash.jpg" class="img-fluid" alt="">
@@ -180,6 +158,20 @@
         </div>
         <hr class="my-4">
 
+
+    <!-- - Jumbotron -->
+    <div class="container-fluid">
+            <div class="row jumbotron">
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+                    <p class="lead"> some random text Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, aliquam.</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+                    <a href="#"><button type="button" class="btn btn-outline-secondary btn-lg">
+                        Web Hosting
+                    </button> </a>
+                    </div>
+            </div>
+        </div>
 
     <!-- - Fixed background -->
     <figure>
