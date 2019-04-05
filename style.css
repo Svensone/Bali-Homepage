@@ -16,15 +16,18 @@ body {
 }
 
 .btn-primary {
-  background-color: #6648b1;
-  border: 1px solid #6648b1;
+  background-color: #b6afc9;
+  border: 1px solid #b6afc9;
 }
 .btn-primary {
-  background-color: #563d7c;
-  border: 1px solid #563d7c;
+  background-color: #5e536e;
+  border: 1px solid #5e536e;
+}
+ a {
+  color: #fff;
 }
 
-/* Navigation Bar
+/*  -------------    Navigation Bar
 -------------------------------------------------- */
 navbar {
   padding: .8rem;
@@ -41,22 +44,6 @@ navbar {
   font-size: 1.1em !important;
 }
 
-
-/* ----------- Animation Section 
--------------------------------------------------- */ 
-
-#animations {
-  margin-top: 2rem;
-}
-
-/* ----------- Project Section 
--------------------------------------------------- */
-
-#project1 {
-  margin-top: 5rem;
-}
-
-
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
@@ -67,13 +54,13 @@ navbar {
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   bottom: 3rem;
-  z-index: 10;
+  z-index: 50;
   position: absolute;
-  top: 50%;
+  top: 75%;
   transform: translateY(-50%);
 }
 .carousel-caption h1 {
-  font-size: 500%;
+  font-size: 200%;
   text-transform: uppercase;
   text-shadow: 1px 1px 15px #000;
 }
@@ -103,19 +90,22 @@ navbar {
   margin: 0 auto;
 }
 
-/* Two Column Intro
--------------------------------------------------- */
-#showcase img{
-  width:95%;
-  margin-left:30px;
+
+/* ----------- Animation Section 
+-------------------------------------------------- */ 
+
+#animations {
+  margin-top: 5rem;
 }
 
-#showcase .showcase-right{
-  margin-top:90px;
+.display-4 {
+  font-size: 250%;
 }
-.container-showcase{
-  min-height: 50vh;
-}
+
+
+
+
+
 
 
  /* Jumbotron in surf.html
@@ -202,7 +192,8 @@ navbar {
 -------------------------------------------------- */
 footer {
   color: d5d5d5;
-  padding-top: 2rem;
+  padding-top: 0.2rem;
+  max-height: 40px;
 }
 
 hr.light {
