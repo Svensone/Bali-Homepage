@@ -9,22 +9,26 @@
     <link rel="icon" href="../../../../favicon.ico">
 
     <title>Bali Website</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
-    <!-- Bootstrap -->
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
-
-    <!-- Fonts -->
-    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     
-    <!-- Stylesheet -->
+    <!-- Style -->
     <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/vision.css" />
 
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   </head>
 
   <body>
+
 <!-- Navigation -->
 <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
   <div class="container-fluid">
@@ -61,101 +65,185 @@
     </div>
   </nav>
 
-
-    <main role="main">
-
-      <section class="jumbotron text-center">
-        <div class="container">
-          <h1 class="jumbotron-heading">Vision</h1>
-          <p class="lead text-muted">social - surf - superfun </p>
-          <p>
-            <!-- <a href="#" class="btn btn-primary my-2">activites</a>
-            <a href="#" class="btn btn-secondary my-2">orphanage</a> -->
-          </p>
-        </div>
-      </section>
-
-
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <img class="card-img-top" src="img/formatted/surf-4.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">Content coming soon</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <img class="card-img-top" src="img/formatted/surf-5.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">Content coming soon</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <img class="card-img-top" src="img/formatted/surf-1.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">Content coming soon</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-        </div>
+<!-- Vision Header -->
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h1 class="jumbotron-heading">Vision</h1>
+        <p class="lead text-muted">social - surf - superfun </p>
+        <p>
+          <!-- <a href="#" class="btn btn-primary my-2">activites</a>
+          <a href="#" class="btn btn-secondary my-2">orphanage</a> -->
+        </p>
       </div>
+    </section>
 
-    </main>
-
-     <!-- ---------------------- Footer ------------------------>
-    
-     <footer>
-      <div class="container-fluid padding footer">
-          <div class="row text-center">
-              <div class="col-md-12">
-                  <div class="logo">
-                          <img src="img/019-van.png" alt="" height="50px" >
+    <!-- Vision Details -->
+    <section id="showcase">
+        <div class="container container-fluid container-showcase">
+            <div class="row">
+                <div class="col-xs-12  col-sm-12 col-md-6">
+                    <div class="showcase-left">
+                        <img src="img/vision/social.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 ">
+                    <div class="showcase-right">
+                        <h1> Social </h1>
+                          <p> integrating the orphanage in Negara
+                          <br> Stipendium for school kids in Medewi & Yeh Sumbul
+                          <br> Employees Care
+                          <br> local Macrame shop integration
+                          <br> local artists 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container container-fluid container-showcase">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 ">
+                        <div class="showcase-left">
+                            <h1> Surf </h1>
+                        <p> Surf break in the front
+                          <br> Skate bowl for dry Surf Surf-Training
+                          <br> Gym / Workout Facility with ice-batch (wim-hof baby!)
+                          <br> daily yoga
+                          <br> SUP & Boogieboards
+                        </p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12  col-sm-12 col-md-6">
+                            <div class="showcase-right">
+                                <img src="img/vision/surf.jpg" alt="">
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="container container-fluid container-showcase">
+              <div class="row">
+                  <div class="col-xs-12  col-sm-12 col-md-6">
+                      <div class="showcase-left">
+                          <img src="img/formatted/living-3.jpg" alt="">
+                      </div>
                   </div>
-                  <hr class="light">
-                  <p> sven@sven.de </p>
-                  <p> Bali, Beach Road 23</p>
-              </div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 ">
+                      <div class="showcase-right">
+                          <h1> super-fun </h1>
+                          <p>  balinese cooking every thursday w. Ogeg
+                            <br> educational tropical garden
+                            <br> happy-hour from 5-9pm
+                            <br> going hunting w. Komang
+                            <br> movie night on friday
+                            <br> beach-bbq & bonfire on saturday
+                            <br> soccer on sunday (maybe with the boys from the orphanage?)
+                           </p>
+                      </div>
+                  </div>
               </div>
           </div>
-      </div>
-  </footer>
 
-   
+    </section>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../assets/js/vendor/popper.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <script src="../../assets/js/vendor/holder.min.js"></script>
-  </body>
+    <!-- Divider  -->
+    <hr class="my-4">
+<!-- ------------------- Help us / get involed  -------------------  -->
+<div class="container-fluid">
+    <div class="row jumbotron">
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+            <p class="lead"> Join in ! 
+                <br> We are happy for any help, prayers, ideas, tipps & feedback!</p>
+        
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+            <a href="#"><button type="button" class="btn btn-outline-secondary btn-lg">
+                Join us!
+            </button> </a>
+            </div>
+    </div>
+</div>
+
+<!-- ---------------------- Footer ------------------------>
+<footer>
+<div class="container-fluid padding footer">
+    <div class="row text-center">
+        <div class="col-md-12">
+            <div class="logo">
+                    <img src="img/019-van.png" alt="" height="50px" >
+            </div>
+            <hr class="light">
+            <p> Agus & Sven </p>
+            <p> Bali</p>
+        </div>
+        </div>
+    </div>
+</div>
+</footer>
+
+<!-- ---------------------- Scripts ------------------------>
+
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+      <script>
+          window.sr = ScrollReveal();
+          sr.reveal('.navbar', {
+            duration: 2000,
+            origin:'bottom'
+          });
+          sr.reveal('.showcase-left', {
+            duration: 2000,
+            origin:'top',
+            distance:'300px'
+          });
+          sr.reveal('.showcase-right', {
+            duration: 2000,
+            origin:'right',
+            distance:'300px'
+          });
+          sr.reveal('.showcase-btn', {
+            duration: 2000,
+            delay: 2000,
+            origin:'bottom'
+          });
+          sr.reveal('#testimonial div', {
+            duration: 2000,
+            origin:'bottom'
+          });
+          sr.reveal('.info-left', {
+            duration: 2000,
+            origin:'left',
+            distance:'300px',
+            viewFactor: 0.2
+          });
+          sr.reveal('.info-right', {
+            duration: 2000,
+            origin:'right',
+            distance:'300px',
+            viewFactor: 0.2
+          });
+      </script>
+      <script>
+      $(function() {
+        // Smooth Scrolling
+        $('a[href*="#"]:not([href="#"])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html, body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+      </script>
+
+</body>
+
 </html>
+
